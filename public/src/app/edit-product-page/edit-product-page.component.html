@@ -1,0 +1,7 @@
+
+<form class="from-group" *ngIf="selectedProduct" (submit)="updateProduct()">
+  Title: <input class=form-control type="text" name="title" [(ngModel)]="selectedProduct.title" />
+  Price: <input class=form-control type="text" name="description" [(ngModel)]="selectedProduct.price" />
+  IMG: <input class=form-control type="text" name="completed" [(ngModel)]="selectedProduct.imageurl" />
+  <input class="btn btn-link btn-sm" type="submit" value="Edit Product" />
+</form>
